@@ -16,16 +16,24 @@
         <div class="container-grid posicionamento-header">
             <a href=""><img class="logo" src="img/Logo.jpg" alt="Logo do site"></a>
                 <nav id="menu" class="menu">
-                <a href="">Busque aqui</a>
-                <a href="">Faça seu login</a>
+                <a href="">Buque Aqui</a>
+                <a href="">Faça seu cadastro</a>
                 <a href="">Whatsapp</a>
                 <a href="">Favoritos</a>
                 <a href="">Carrinho de compras</a>
             </nav>
-            <a href="" onclick="mostrarMenu()"><img class="barras" src="img/Menu.png" alt="Menu de Barras"></a>
+            <a href="#" onclick="mostrarMenu()"><img class="barras" src="img/Menu.png" alt="Menu de Barras"></a>
         </div>
         <a href=""><img class="banner"></a>
     </header>
+    <div class="container-grid posicionamento-submenu">
+        <nav id="submenu" class="submenu">
+            <a href="">Todos os departamentos</a>
+            <a href="">Lançamentos</a>
+            <a href="">Mais vistos</a>
+            <a href="">Oferta do dia</a>
+        </nav>
+    </div>
     <div class="banner">
         <div class="container-grid posicao-texto">
             <div class="texto-banner">
@@ -33,28 +41,31 @@
             </div>
         </div>
         <section class="secao-ofertas">
-            <div class="ofertas container">
+            <div class="ofertas container-grid">
                 <a href=""><img src="img/HD.jpg"></a>
                 <a href=""><img src="img/teclado.jpg"></a>
                 <a href=""><img src="img/monitor.jpg"></a>
                 <a href=""><img src="img/roteador.jpg"></a>
                 <a href=""><img src="img/mouse.jpg"></a>
                 </div>
-            </div>
         </section>
         <section class="nomes-ofertas">
-            <div class="nomes container">
-                <a href="">Hd 1TB Seagate</a>
+            <div class="nomes container-grid">
+                <h6>HD Seagate 1TB</h6>
+                <h6>Teclado Gamer Bright</h6>
+                <h6>Monitor Gamer AOC</h6>
+                <h6>Roteador WI-Fi</h6>
+                <h6>Mouse Gamer</h6>
             </div>
         </section>
         <script>
-            let menu = document.getElementById("menu");
+            let menu = document. getElementById("menu");
 
-            function mostrarmenu(){
-                if(menu.style.display != "flex"){
-                    menu.style.display = "flex"
+            function mostrarMenu(){
+                if(menu. style. display != "flex"){
+                    menu. style. display = "flex"
                 }else{
-                    menu.style.display = "none"
+                    menu. style. display = "none"
                 }
         }
         </script>
