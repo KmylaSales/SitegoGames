@@ -1,2 +1,2 @@
 # SitegoGames
-Finalizando a etapa de responsividade.
+Finalizando a home.
