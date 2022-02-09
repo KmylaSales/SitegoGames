@@ -90,6 +90,10 @@
     text-align: center;
     text-transform: uppercase;
 }
+.carousel{
+    width: 1200px;
+    margin: 0 auto;
+}
 .dicas{
     display: flex;
     justify-content: space-between;
@@ -185,11 +189,13 @@ footer{
 }
 .direitos{
     margin-top: -400px;
+    bottom: auto;
 }
 .direitos p{
     color: black;
     display: flex;
     margin-top: 0;
+    margin-inline-end: 0;
     font-size: 12px;
     font-family: 'Roboto', sans-serif;
     text-align: center;
