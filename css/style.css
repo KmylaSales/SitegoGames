@@ -77,6 +77,50 @@
 .posicao-texto{
     justify-content: flex-end;
 }
+section .carousel{
+    position: relative;
+    height: 850px;
+    width: 70%;
+    display: flex;
+    align-items: center;
+}
+.swiper{
+    width: 1300px;
+}
+.card{
+    position: relative;
+    border-radius: 20px;
+    margin: 20px 0;
+}
+section .card .image{
+    height: 100%;
+    width: 100%;
+    cursor: pointer;
+    padding: 10px;
+}
+section .card .image img{
+    height: 100%;
+    width: 100%;
+    border-radius: 20px;
+    transition: all 0.4s;
+    opacity: 60%;
+}
+section .card .image img:hover{
+    transform: scale(1.07);
+    opacity: 100%;
+}
+.swiper-pagination{
+    position: absolute;
+}
+.swiper-button-next, .swiper-button-prev{
+    opacity: 0.7;
+    color: red;
+    transition: all 0.3s ease;
+}
+.swiper-button-next:hover, .swiper-button-prev:hover{
+    opacity: 1;
+    color: white;
+}
 .secao-ofertas{
     margin-left: 150px;
     width: 80%;
@@ -89,10 +133,6 @@
 .ofertas{
     text-align: center;
     text-transform: uppercase;
-}
-.carousel{
-    width: 1200px;
-    margin: 0 auto;
 }
 .dicas{
     display: flex;

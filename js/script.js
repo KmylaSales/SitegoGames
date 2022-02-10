@@ -14,15 +14,24 @@ $(document).ready(function(){
 
 //function mostrarPopup(){
 //    window.alert("Bem-Vindo ao goGames!")
-//}
-
-
-
-$('.carousel').slick({
-    infinite: true,
-    slidesToShow: 4,
-    slidesToScroll: 4
-  });
+//
+    
+var swiper = new swiper(".myswiper", {
+    slidesPerView:4,
+    spaceBetween:30,
+    slidesPerGroup:4,
+    loop:true,
+    loopFillGroupWithBlank:true,
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+    },
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    }
+}
+)
 
 let email = document.getElementById("campo-email");
 let nome = document.getElementById("campo-nome");
