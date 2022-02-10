@@ -18,6 +18,7 @@
     text-decoration: none;
     font-family: 'Roboto', sans-serif;
     font-size: 20px;
+    text-align: center;
 }
 .menu{
     width: 800px;
@@ -77,13 +78,13 @@
 .posicao-texto{
     justify-content: flex-end;
 }
-section .carousel{
+/* section .carousel{
     position: relative;
     height: 850px;
     width: 70%;
     display: flex;
     align-items: center;
-}
+} */
 .swiper{
     width: 1300px;
 }
