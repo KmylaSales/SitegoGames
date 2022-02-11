@@ -78,7 +78,7 @@
 .posicao-texto{
     justify-content: flex-end;
 }
-.carousel{
+.section-carousel{
     position: relative;  
     height: 850px;
     width: 1300px;
@@ -100,20 +100,20 @@
     position: relative;
     z-index: 100;
 } 
-section .carousel .card .image{
+.section-carousel .card .image{
     height: 100%;
     width: 100%;
     cursor: pointer;
     padding: 10px;   
 } 
-section .carousel .card .image img{
+.section-carousel .card .image img{
     height: 100%;
     width: 100%;
     border-radius: 20px;
     transition: all 0.4s;
     opacity: 60%; 
 }
-section .carousel .card .image img:hover{
+.section-carousel .card .image img:hover{
       transform: scale(1.07);
       opacity: 100%;
 }
@@ -129,7 +129,7 @@ section .carousel .card .image img:hover{
     opacity: 1;
     color: #ffffff;
 }
-.secao-ofertas{
+/* .secao-ofertas{
     margin-left: 150px;
     width: 80%;
     align-items: center;
@@ -141,7 +141,7 @@ section .carousel .card .image img:hover{
 .ofertas{
     text-align: center;
     text-transform: uppercase;
-}
+} */
 .dicas{
     display: flex;
     justify-content: space-between;
@@ -236,7 +236,7 @@ footer{
     text-align: center;
 }
 .direitos{
-    margin-top: -400px;
+    margin-top: 10px;
     bottom: auto;
 }
 .direitos p{
@@ -281,7 +281,7 @@ header{
 }
 @media screen and (max-width: 768px){
     h1{
-        color: blue;
+        color: rgb(255, 0, 0);
     }
     .barras{
         display: inline-block;
@@ -289,10 +289,10 @@ header{
     .menu{
         display: none;
         flex-direction: column;
-        width: 250px;
+        width: 200px;
         position: absolute;
         top: 0px;
-        right: 60px;
+        right: 65px;
         background-color: white;
     }
     .menu a{
@@ -314,6 +314,9 @@ header{
     }
     .logo{
         width: 150px;
+    }
+    .menu-ativo{
+        display: flex;
     }
     
 }
