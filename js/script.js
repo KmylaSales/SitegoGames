@@ -16,22 +16,21 @@ $(document).ready(function(){
 //    window.alert("Bem-Vindo ao goGames!")
 //
     
-var swiper = new swiper(".myswiper", {
-    slidesPerView:4,
-    spaceBetween:30,
-    slidesPerGroup:4,
-    loop:true,
-    loopFillGroupWithBlank:true,
+var swiper = new Swiper(".mySwiper", {
+    slidesPerView: 4,
+    spaceBetween: 30,
+    slidesPerGroup: 4,
+    loop: true,
+    loopFillGroupWithBlank: true,
     pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
+      el: ".swiper-pagination",
+      clickable: true,
     },
     navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-    }
-}
-)
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });
 
 let email = document.getElementById("campo-email");
 let nome = document.getElementById("campo-nome");
