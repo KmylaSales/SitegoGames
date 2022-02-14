@@ -80,8 +80,7 @@
 }
 .section-carousel{
     position: relative;  
-    height: 850px;
-    width: 1300px;
+    width: 100%;
     display: flex;
     align-items: center;
 }
@@ -145,10 +144,19 @@
 .dicas{
     display: flex;
     justify-content: space-between;
+    padding-top: auto;
     align-items: center;
-    padding-top: 40px;
 }
 .dicas img{
+    width: 250px;
+}
+.seg-dicas{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: auto;
+}
+.seg-dicas img{
     width: 250px;
 }
 .departamentos{
@@ -278,6 +286,20 @@ header{
     .logo{
         width: 200px;
     }
+    .banner img{
+        width: auto;
+    }
+    .texto-banner{
+        display: none;
+    }
+    .carousel{
+        width: auto;
+    }
+    .seg-dicas{
+        display: none;
+        width: auto;
+        position: absolute;
+    }
 }
 @media screen and (max-width: 768px){
     h1{
@@ -317,6 +339,20 @@ header{
     }
     .menu-ativo{
         display: flex;
+    }
+    .banner img{
+        width: auto;
+    }
+    .texto-banner{
+        display: none;
+    }
+    .carousel{
+        width: auto;
+    }
+    .seg-dicas{
+        display: none;
+        width: auto;
+        position: absolute;
     }
     
 }
