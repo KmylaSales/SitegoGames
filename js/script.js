@@ -6,8 +6,6 @@
 let menu = document.getElementById("menu");
 
 
-    
-
 
 let email = document.getElementById("campo-email");
 let nome = document.getElementById("campo-nome");
