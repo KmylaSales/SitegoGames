@@ -71,7 +71,7 @@
     left: 625px;
 }
 .texto-banner a{
-    background-color: #C31616;
+    background-color: rgb(242, 7, 19);
     color: white;
     text-decoration: none;
     text-transform: uppercase;
@@ -287,9 +287,10 @@ header{
         font-size: 16px;
     }
     .submenu{
-        width: 460px;
+        width: 100%;
     }
     .submenu a{
+        width: 100%;
         font-size: 16px;
     }
     .logo{
@@ -334,16 +335,14 @@ header{
         text-align: center;
         padding: 15px;
     }
-    .submenu{
-        display: none;
-        flex-direction: column;
-        width: 250px;
-        position: absolute;
-        top: 0px;
-        right: 60px;
-        background-color: white;
+    .submenu-departamento{
+        display: flex;
+        width: 100%;
+        position: relative;
+        background-color: rgb(242, 7, 19) ;
     }
     .submenu a{
+        width: 100%;
         text-align: center;
         padding: 15px;
     }
