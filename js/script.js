@@ -1,7 +1,7 @@
 
-//function mostrarPopup(){
+// function mostrarPopup(){
 //    window.alert("Bem-Vindo ao goGames!")
-//
+
 
 let menu = document.getElementById("menu");
 
