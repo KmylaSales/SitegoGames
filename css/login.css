@@ -2,7 +2,7 @@
 
 :root{
     --color-green: #00FF99;
-    --color-purple: rgb(87, 4, 80);
+    --color-purple: rgb(197, 83, 188);
     --color-input-text: #233;
 }
 *{
@@ -36,6 +36,13 @@ body{
     padding: 30px;
     background: rgba(0,0,0,0.4);
     border-radius: 20px;
+}
+.wrapper a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    text-align: center;
+    margin: 15px;
 }
 form h1{
     font-weight: 700;
@@ -95,4 +102,36 @@ section.area-validacao{
 }
 section ul{
     list-style: none;
+}
+section ul li{
+    font-size: 15px;
+}
+section ul li span{
+    margin: 15px;
+}
+section ul li.active{
+    color: var(--color-green) 
+}
+input.btn{
+    outline: none;
+    width: 350px;
+    border-radius: 10px;
+    height: 56px;
+    border: none;
+    color: white;
+    font-size: 18px;
+    font-weight: 700;
+    cursor: pointer;
+    background: var(--color-purple);
+    transition: all 0.2s;
+}
+input.btn:hover{
+    filter: brightness(90%);
+}
+input.btn:disabled{
+    background: lightgray;
+    cursor: auto;
+}
+input.btn:disabled:hover{
+    filter: brightness(100%)
 }

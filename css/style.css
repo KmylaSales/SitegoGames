@@ -12,6 +12,12 @@
     justify-content: space-between;
     align-items: center;
 }
+body{
+    background: rgb(204, 107, 196);
+}
+.logo{
+    width: 320px;
+}
 .menu a{
     margin-left: 22px;
     color: black;
@@ -19,6 +25,9 @@
     font-family: 'Roboto', sans-serif;
     font-size: 20px;
     text-align: center;
+}
+header{
+    background: rgb(204, 107, 196);
 }
 .menu{
     width: 800px;
@@ -40,7 +49,7 @@
     font-style: italic;
 }
 .submenu-departamento{
-    background-color: rgb(242, 7, 19);
+    background-color: rgb(197, 83, 188);
 }
 .submenu a{
     color: black;
@@ -171,6 +180,7 @@ section .card .image img:hover{
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 50px;
 }
 .dicas img{
     width: 250px;
@@ -183,6 +193,16 @@ section .card .image img:hover{
 .seg-dicas img{
     width: 250px;
 }
+.todos-departamentos{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    padding: 10px;
+    margin-bottom: 100px;
+}
 .departamentos{
     height: 211px;
     font-size: 50px;
@@ -194,7 +214,7 @@ section .card .image img:hover{
     justify-content: space-between;
 }
 .ofertas-email{
-    background-color: #6a6aec;
+    background-color: rgb(197, 83, 188);
     display: flex;
     justify-content: space-between;
 }
@@ -360,7 +380,7 @@ header{
         display: flex;
         width: 100%;
         position: relative;
-        background-color: rgb(242, 7, 19) ;
+        background-color: rgb(197, 83, 188);
     }
     .submenu a{
         width: 100%;
