@@ -33,7 +33,7 @@
                 </div>
                 <div class="input-form">
                     <i class="fas fa-lock"></i>
-                    <input type="password" name="password" id="password">
+                    <input type="senha" name="senha" id="senha">
                 </div>
 
                 </section>
@@ -41,22 +41,22 @@
                 <div class="divider"></div>
                 <section class="area-validacao">
                     <ul>
-                        <li class="active">
+                        <li id="maiusculas">
                             <span>
                                 <i class="fas fa-circle"></i>   
                             </span>
                             A senha deve conter maiúsculas/minúsculas;</li>
-                        <li>
+                        <li id="numeros">
                             <span>
                                 <i class="fas fa-circle"></i>   
                             </span>
                             A senha deve conter números;</li>
-                        <li>
+                        <li id="especiais">
                             <span>
                                 <i class="fas fa-circle"></i>   
                             </span>
                             A senha deve conter caracteres especiais;</li>
-                        <li>
+                        <li id="caracteres">
                             <span>
                                 <i class="fas fa-circle"></i>   
                             </span>
@@ -64,7 +64,7 @@
                     </ul>
                 </section>
 
-            <input type="submit" value="Fazer Login" class="btn">
+            <input type="submit" value="Fazer Login" class="btn" id="submit-button" disable>
 
             <a href="">Ainda não é cadastrado?<br>Cadastre-se</a>
 

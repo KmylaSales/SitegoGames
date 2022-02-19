@@ -384,11 +384,12 @@ header{
         text-align: center;
         font-size: 14px;
     }
-    .posicionamento-menu img{
-        margin: 0%;
+    .posicionamento-menu{
+        width: 100px;
+        height: 100px;
     }
     .posicionamento-menu form{
-        width: 180px;
+        width: 190px;
     }
     .submenu-departamento{
         display: flex;
