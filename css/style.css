@@ -18,23 +18,27 @@ body{
 .logo{
     width: 320px;
 }
+header{
+    height: 80px;
+    background: rgb(204, 107, 196);
+}
+.menu{
+    width: 660px;
+    display: flex;
+    justify-content: space-between;
+}
 .menu a{
-    margin-left: 22px;
+    width: 600px;
+    display: flex;
     color: black;
     text-decoration: none;
+    text-transform: uppercase;
     font-family: 'Roboto', sans-serif;
     font-size: 20px;
     text-align: center;
 }
-header{
-    background: rgb(204, 107, 196);
-}
-.menu{
-    width: 800px;
-    display: flex;
-    justify-content: space-between;
-}
 .posicionamento-menu form{
+    width: 100%;
     display: flex;
     margin-bottom: 8px;
 }
@@ -319,7 +323,9 @@ header{
         display: block;
     }
     .menu a{
-        font-size: 16px;
+        font-size: 14px;
+        text-align: center;
+        justify-content: center;
     }
     .submenu{
         width: 100%;
@@ -373,8 +379,16 @@ header{
         background-color: white;
     }
     .menu a{
+        width: 150px;
+        width: 150px;
         text-align: center;
-        padding: 15px;
+        font-size: 14px;
+    }
+    .posicionamento-menu img{
+        margin: 0%;
+    }
+    .posicionamento-menu form{
+        width: 180px;
     }
     .submenu-departamento{
         display: flex;
@@ -385,7 +399,7 @@ header{
     .submenu a{
         width: 100%;
         text-align: center;
-        padding: 15px;
+        font-size: 10px;
     }
     .logo{
         width: 150px;
@@ -415,6 +429,29 @@ header{
     .carousel{
         width: auto;
     }
+    .secao-dicas img{
+        padding: 10px;
+        width: 150px;
+        height: 150px;
+    }
+    .departamentos{
+        font-size: 36px;
+    }
+    .departamentos img{
+        height: 70px;
+    }
+    .todos-departamentos{
+        padding: 15px;
+    }
+    .email{
+        flex-direction: column;
+        align-items: center;
+    }
+    .email form{
+        width: 100%;
+        padding: 55px;
+        align-items: center;
+    }
     .seg-dicas{
         display: none;
         width: auto;
@@ -424,7 +461,19 @@ header{
         width: auto;
         margin: 0;
     }
-    
+    .link h3{
+        font-size: 10px;
+    }
+    .link a{
+        font-size: 6px;
+    }
+    .sociais h3{
+        font-size: 6px;
+    }
+    .direitos p{
+        font-size: 4px;
+    }
+
 }
 
 
