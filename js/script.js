@@ -34,6 +34,22 @@ const li_caracteres = document.querySelector('#caracteres');
 sign_in_senha.addEventListener('keyup', (event) => {
     const {value} = sign_in_senha;
 
+    //regex//
+    var regexNumbers = /\d/g;
+
+    const upperRegex = RegExp("[A-Z]");
+    const lowerRegex = RegExp("[a-z]");
+    
+    var regexSpecialCharacters = /[ ´!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?~]/;
+
+    //variaveis de validacao//
+    const isNumberValidated = value.match(regexNumbers);
+    const isSpecialCharacters = value.match(value.match(regexSpecialCharacters));
+    const isPasswordLength = value.length >= 8;
+    const isLowerUpper = value.match(upperRegex) && value.match(lowerRegex);
+
+//validacao de numeros de caracteres//
+
     if (value.length >= 8) {
     li_caracteres.classList.add('active');
     const icon = li_caracteres.getElementsByTagName('i')[0];
@@ -46,49 +62,59 @@ sign_in_senha.addEventListener('keyup', (event) => {
     icon.classList.add('fa-circle');
     }
 
+//validacao de numeros na senha//
 
 
+    if (value.match(regexNumbers)) {
+        li_numeros.classList.add('active');
+        const icon = li_numeros.getElementsByTagName('i')[0];
+        icon.classList.remove('fa-circle');
+        icon.classList.add('fa-check');
+        } else {
+        li_caracteres.classList.remove('active');
+        const icon = li_numeros.getElementsByTagName('i')[0];
+        icon.classList.remove('fa-check');
+        icon.classList.add('fa-circle');
+        }
 
 
-    // if (value.length >= 8) {
-    //     li_caracteres.classList.add('active');
-    //     const icon = li_caracteres.getElementsByTagName('i')[0];
-    //     icon.classList.remove('fa-circle');
-    //     icon.classList.add('fa-check');
-    //     } else {
-    //     li_caracteres.classList.remove('active');
-    //     const icon = li_caracteres.getElementsByTagName('i')[0];
-    //     icon.classList.remove('fa-check');
-    //     icon.classList.add('fa-circle');
-    //     }
+//verificacao de caracteres especiais//
 
 
+      if (value.match(regexSpecialCharacters)) {
+    li_especiais.classList.add('active');
+    const icon = li_especiais.getElementsByTagName('i')[0];
+    icon.classList.remove('fa-circle');
+    icon.classList.add('fa-check');
+    } else {
+    li_especiais.classList.remove('active');
+    const icon = li_especiais.getElementsByTagName('i')[0];
+    icon.classList.remove('fa-check');
+    icon.classList.add('fa-circle');
+    }
 
 
-    //   if (value.length >= 8) {
-    // li_caracteres.classList.add('active');
-    // const icon = li_caracteres.getElementsByTagName('i')[0];
-    // icon.classList.remove('fa-circle');
-    // icon.classList.add('fa-check');
-    // } else {
-    // li_caracteres.classList.remove('active');
-    // const icon = li_caracteres.getElementsByTagName('i')[0];
-    // icon.classList.remove('fa-check');
-    // icon.classList.add('fa-circle');
-    // }
+//verificacao de maiusculas e minusculas//]
 
 
+    if (value.match(upperRegex) && value.match(lowerRegex)) {
+        li_maiuculas.classList.add('active');
+        const icon = li_maiuculas.getElementsByTagName('i')[0];
+        icon.classList.remove('fa-circle');
+        icon.classList.add('fa-check');
+        } else {
+        li_maiuculas.classList.remove('active');
+        const icon = li_maiuculas.getElementsByTagName('i')[0];
+        icon.classList.remove('fa-check');
+        icon.classList.add('fa-circle');
+        }
 
-
-    // if (value.length >= 8) {
-    //     li_caracteres.classList.add('active');
-    //     const icon = li_caracteres.getElementsByTagName('i')[0];
-    //     icon.classList.remove('fa-circle');
-    //     icon.classList.add('fa-check');
-    //     } else {
-    //     li_caracteres.classList.remove('active');
-    //     const icon = li_caracteres.getElementsByTagName('i')[0];
-    //     icon.classList.remove('fa-check');
-    //     icon.classList.add('fa-circle');
-    //     }
+        if (isNumberValidated &&
+            isSpecialCharacters &&
+            isPasswordLength &&
+            isLowerUpper) {
+            submitButton.removeAttribute('disable');
+            } else {
+                submitButton.setAttribute('disable', '');
+            }
 });
