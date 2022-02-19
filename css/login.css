@@ -138,3 +138,13 @@ input.btn:disabled{
 input.btn:disabled:hover{
     filter: brightness(100%)
 }
+@media screen and (max-width: 1200px){
+.logotipo{
+    width: 150px;
+}
+}
+@media screen and (max-width: 768px){
+.logotipo{
+    width: 150px;
+}
+}
