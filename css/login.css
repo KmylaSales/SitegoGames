@@ -142,11 +142,11 @@ input.btn:disabled:hover{
 }
 @media screen and (max-width: 1200px){
 .logotipo{
-    width: 150px;
+    width: 180px;
 }
 }
 @media screen and (max-width: 768px){
 .logotipo{
-    width: 150px;
+    width: 180px;
 }
 }
