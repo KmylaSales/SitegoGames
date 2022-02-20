@@ -17,10 +17,12 @@
 header{
     height: 20px;
 }
+.logotipo{
+    width: 300px;
+}
 body{
     font-family: 'Poppins', sans-serif;
     overflow: hidden;
-
 }
 .container{
     width: 100%;

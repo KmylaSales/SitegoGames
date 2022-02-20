@@ -113,8 +113,8 @@ sign_in_senha.addEventListener('keyup', (event) => {
             isSpecialCharacters &&
             isPasswordLength &&
             isLowerUpper) {
-            submitButton.removeAttribute('disable');
+            submitButton.removeAttribute('disabled');
             } else {
-                submitButton.setAttribute('disable', '');
+                submitButton.setAttribute('disabled', '');
             }
 });

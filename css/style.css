@@ -13,14 +13,14 @@
     align-items: center;
 }
 body{
-    background: rgb(204, 107, 196);
+    background: rgb(115, 66, 172);
 }
 .logo{
     width: 320px;
 }
 header{
     height: 80px;
-    background: rgb(204, 107, 196);
+    background: rgb(115, 66, 172);
 }
 .menu{
     width: 660px;
