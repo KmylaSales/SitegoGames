@@ -350,7 +350,7 @@ header{
         display: none;
     }
     .carousel{
-        width: auto;
+        width: 100%;
     }
     .seg-dicas{
         display: none;
@@ -428,7 +428,7 @@ header{
         flex-direction: column;
     }
     .carousel{
-        width: auto;
+        width: 100%;
     }
     .secao-dicas img{
         padding: 10px;
@@ -469,7 +469,7 @@ header{
         font-size: 6px;
     }
     .sociais h3{
-        font-size: 6px;
+        font-size: 10px;
     }
     .direitos p{
         font-size: 4px;
